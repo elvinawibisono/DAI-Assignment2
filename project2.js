@@ -1,12 +1,20 @@
 $(document).ready(function() {
+
   // Toggle the receive spam checkbox
   $("#receivespambutton").click(function() {
 
+    $("#message1").show();
+
     if($($("#receivespambutton").children()[0]).attr("src")=="pics/unchecked.png") {
       $($("#receivespambutton").children()[0]).attr("src","pics/checked.png");
+      $("#message3").show();
+      $("#message4").hide();
       $("#spamyn").val("y");
+      
     } else {
       $($("#receivespambutton").children()[0]).attr("src","pics/unchecked.png");
+      $("#message4").show();
+      $("#message3").hide();
       $("#spamyn").val("n");
     }
   });

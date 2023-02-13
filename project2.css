@@ -3,6 +3,8 @@ html,body {
   font-size: 1.1em;
 }
 
+
+
 .container {
   margin: auto;
   width: 800px;
@@ -44,6 +46,10 @@ a {
   top: -100px;
 }
 
+#message4{
+  display: None;
+}
+
 .error {
   color: red;
 }
@@ -51,5 +57,5 @@ a {
 #accessibilitybanner {
   width: 857px;
   height: 207px;
-  background-image: url(pics/accessibilityoverviewbanner.png);
+  background-image: url(pics/blackfontbanner.png);
 }
