@@ -59,9 +59,9 @@ a:active {
   font-size: 1px;
 }
 
-/*.navigation a {
+.navigation a {
   outline: blue solid 2px;
-}*/ 
+}
 
 #videoplayer {
   text-align: center;
