@@ -3,8 +3,15 @@ html,body {
   font-size: 1.1em;
 }
 
-
-
+h1 {
+  height: 207px;
+  width: 857px;
+  margin-bottom: 20px;
+  text-align:center;
+  vertical-align:middle;
+  line-height:200px;
+  background:transparent no-repeat scroll 50% 50%;
+ }
 .container {
   margin: auto;
   width: 800px;
@@ -59,3 +66,7 @@ a {
   height: 207px;
   background-image: url(pics/blackfontbanner.png);
 }
+
+
+
+
