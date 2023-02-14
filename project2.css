@@ -33,19 +33,35 @@ input,textarea {
   font-size: 1.1em;
 }
 
-a {
-  text-decoration: none;
-  color: gray;
+a:link {
+  color: black;
 }
+
+/* visited link */
+a:visited {
+  color: purple ;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: red; 
+}
+
+
 
 .offscreen {
   top: -1000px;
   font-size: 1px;
 }
 
-.navigation a {
-  outline: none;
-}
+/*.navigation a {
+  outline: blue solid 2px;
+}*/ 
 
 #videoplayer {
   text-align: center;
