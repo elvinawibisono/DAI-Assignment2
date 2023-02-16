@@ -19,6 +19,7 @@ $(document).ready(function() {
     }
   });
 
+  
   //Enter key for spam box 
   $("#receivespambutton").keypress(function(event) {
 
@@ -42,6 +43,7 @@ $(document).ready(function() {
       }
 
   });
+  
 
 
   // Play video
