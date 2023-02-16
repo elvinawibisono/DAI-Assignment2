@@ -56,94 +56,36 @@ $(document).ready(function() {
     }
   });
 
+  $("input").click(function(){
+
+    $("input").css('border-color', 'none');
+    
+  }); 
+
   // Form validation
   $("#signupbutton").click(function() {
-    if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
-      $("#name").addClass("error");
 
-      return;
-    } else {
-      $("#name").removeClass("error");
-    }
+    //$("input").css('border-color', '');
 
-    if($("#em").val()=="") {
-      $("#email").addClass("error");
-
-      return;
-    } else {
-      $("#name").removeClass("error");
-    }
-
-    alert("Thank you!  Please watch your email for our exciting newsletter and offers!");
-  });
-
-
-/*
-  //Enter
-  $("signupbotton").focus(function(){
-
-    $("#signupbutton").keypress(function(event) {
-      var keycode = (event.keyCode ? event.keyCode : event.which);
-      if(keycode == '13'){
-  
-        if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
-          $("#name").addClass("error");
-    
-          return;
-        } else {
-          $("#name").removeClass("error");
-        }
-    
-        if($("#em").val()=="") {
-          $("#email").addClass("error");
-    
-          return;
-        } else {
-          $("#name").removeClass("error");
-        }
-    
-        alert("Thank you!  Please watch your email for our exciting newsletter and offers!");
-  
-      }
-      
-    })
-  
-  });
-  /*
-
-
-
-
-
-  // enter
-  /*$("#signupbutton").keypress(function(event) {
-    if (event.code == 'Enter') {
-      if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
-        $("#name").addClass("error");
-  
-        return;
-      } else {
-        $("#name").removeClass("error");
-      }
-  
-      if($("#em").val()=="") {
-        $("#email").addClass("error");
-  
-        return;
-      } else {
-        $("#name").removeClass("error");
-      }
-  
+    if($("#firstname").val()!="" && $("#lastname").val()!="" && $("#email").val()!=""){
+      $("#firstname").css('border-color', ''); 
+      $("#lastname").css('border-color', ''); 
+      $("#email").css('border-color', ''); 
       alert("Thank you!  Please watch your email for our exciting newsletter and offers!");
+      
+
+    }else if($("#firstname").val()=="" || $("#lastname").val()=="" || $("#email").val()=="") {
+      $("#firstname").css('border-color', 'red'); 
+      $("#lastname").css('border-color', 'red'); 
+      $("#email").css('border-color', 'red'); 
+      alert("Please insert your First and Last Name & Email! ");
+
+      
+
     }
+
   });
 
-  $("#signupbutton").keyup(function(event) {
-    if (event.code == 'Enter') {
-      
-    }
-  });
-  */ 
 });
 
 
